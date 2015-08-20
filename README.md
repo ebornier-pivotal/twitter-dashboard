@@ -2,7 +2,7 @@
 
 Nice demo app to demonstrate how we can easiliy build stream application based on Spring XD + RabbitMQ.
 
-The demo app displays a stream of tweets based on a query done by the user. The query is a set of words to track. 
+The demo app displays a stream of tweets based on a query done by the user. The query is a set of words to track.
 
 The web app reads from a rabbit queue. Spring XD is responsible for feeding the queue.
 
@@ -15,5 +15,7 @@ If the app is binded to a rabbitmq service (in Pivotal Cloud Foundry), this inst
 Currently, this demo is not able to read vcap to bind the spring-xd server.
 
 The demo works fine on a laptop, but I encountered issues with CF deployment. I have to fix it.
+
+Tweets displayed in red are "negative" tweet. The idea is to do real time sentiment analysis in the futur. So far, it's just a basic algorithm.
 
  ![Twitter DashBoard](https://raw.githubusercontent.com/ebornier-pivotal/twitter-dashboard/master/twitter-dashboard.png)
